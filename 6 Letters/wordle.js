@@ -10808,7 +10808,11 @@ function processInput(e) {
 
   if (!gameOver && row == height) {
     gameOver = true;
-    document.getElementById("answer").innerText = word;
+    document.getElementById("meaning").textContent =
+      word + " means " + fourengWords[wordIndex];
+    setTimeout(function () {
+      location.reload();
+    }, 5000);
   }
 }
 
