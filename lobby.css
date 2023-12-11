@@ -141,7 +141,7 @@ h1 {
   }
 }
 .back {
-  background-image: url("/pictures&audio/back.png");
+  background-image: url("pictures&audio/back.png");
   background-size: cover;
   height: 60px;
   width: 60px;
