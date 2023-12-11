@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Salitang Manyman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+  <link rel="stylesheet" href="wordleDesign.css" />
+  <link rel="stylesheet" href="wordle.css" />
+
+  <audio loop autoplay>
+    <source src="../pictures&audio/bgmusic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</head>
+
+<body>
+  <main id="manyaman">
+    <header>
+      <div id="coins-container">
+        <img id="coins" src="../pictures&audio/output-onlinegiftools.gif" />
+        <span id="balance"></span>
+      </div>
+      <h2 style="font-size:3.5rem;" id="title">Salitang Manyaman</h2>
+    </header>
+    <!-- <div id="timer"></div> -->
+    <h2><span id="clueWord"></span></h2>
+    <h2><span id="clueLetter"></span></h2>
+    <h1 id="definition" style="font-size:150px"><span id="meaning"></span></h1>
+    <div id="board"></div>
+    <h2 id="answer"></h2>
+    <button id="shop"></button>
+    <button id="back"></button>
+
+    <div class="modal" id="shopList">
+      <h1 style="font-size:larger; position:static;"><span>Buy Clue (20 Coins)</span></h1>
+      <div class="options">
+        <button class="btn" id="buyLetter">Letter Clue</button>
+        <button class="btn" id="buyWord">Word Clue</button>
+      </div>
+    </div>
+
+    <div class="modal" id="backAsk">
+      <h1 style="font-size:larger; position:static; text-align:center"><span>Are you sure to go Back?</span></h1>
+        <div class="options">
+            <button class="btn" id="backYes">Yes</button>
+          <button class="btn" id="backNo">No</button>
+        </div>
+    </div>
+  </main>
+  </main>
+  <script src="wordle.js"></script>
+</body>
+
+</html>

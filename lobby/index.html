@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Wordle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="lobby.css" />
+</head>
+
+<body>
+    <h1><span id="title">Salitang Manyaman</span></h1>
+
+    <div class="modal" id="options">
+        <div class="options">
+            <button class="btn" id="playNow">Play Now</button>
+            <button class="btn" id="credits">Credits</button>
+            <button class="btn" id="instructions">Instructions</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modes">
+        <div class="options">
+            <button class="back" id="backPlay"></button>
+            <div style="border: 0; margin-bottom: 10px">
+                <h1 style="font-size:xx-large">Modes</h1>
+            </div>
+            <button class="btn"><a href="/lobby/4 Letters/fourLetters.html">4 Letters</button></a>
+            <button class="btn"><a href="/lobby/5 Letters/fiveLetters.html">5 Letters</button></a>
+            <button class="btn"> <a href="/lobby/6 Letters/sixLetters.html">6 Letters</button></a>
+        </div>
+    </div>
+
+    <div class="modal" id="creditsList">
+        <div class="options">
+            <button class="back" id="backCredits"></button>
+            <div style="border: 0; margin-bottom: 10px">
+                <h1 style="font-size:xx-large">Credits</h1>
+            </div>
+            <div class="btn" style="margin-bottom: 5px">Mark Bennett N. Pineda</div>
+            <div class="btn" style="margin-bottom: 5px">Ronald Timbol</div>
+            <div class="btn" style="margin-bottom: 5px">Cyrill Catacutan</div>
+            <div class="btn" style="margin-bottom: 5px">Jerome Canlas</div>
+            <div class="btn" style="margin-bottom: 5px">Rovic Panganiban</div>
+        </div>
+    </div>
+
+    <div class="modal" id="instructionsList" style="width: 1000px; height:450px">
+        <div class="options">
+            <button class="back" id="backInstructions"></button>
+            <div style="border: 0; margin-bottom: 10px">
+                <h1 style="font-size:xx-large">Instructions</h1>
+            </div>
+            <div class="btn" style="margin-bottom: 5px">
+                Start:
+                <br>
+                You begin with an empty field where you can input your guesses. The secret word is not visible to you
+                initially.
+                <br>
+                Guessing:
+                <br>
+                Input a five-letter word guess into the provided space.
+                The letters may turn different colors to provide feedback on your guess:
+                Green: Correct letter in the correct position.
+                Yellow: Correct letter, but in the wrong position.
+                Gray/Black: Incorrect letter.
+                <br>
+                Feedback:
+                <br>
+                Use the feedback from each guess to refine your next attempts.
+                For example, if the word is "BRAVE," and you guessed "RAVEN," you might see two green, one yellow, and
+                two gray/black indicators.
+                <br>
+                Strategy:
+                <br>
+                Use a mix of common words and variations to deduce the secret word.
+                Pay attention to the feedback and adjust your guesses accordingly.
+                <br>
+                Winning:
+                You win by guessing the correct word within six attempts.
+                The game typically ends after either a correct guess or after six attempts, revealing the secret word.
+                <br>
+                Losing:
+                <br>
+                If you can't guess the word within six attempts, the game ends, and the secret word is revealed.
+                <br>
+                Tips:
+                <br>
+                Start with Common Letters: Begin your guesses with common letters to quickly eliminate possibilities.
+                Analyze Feedback: Use the feedback from each guess to strategically narrow down the options.
+                Think Outside the Box: Consider less common words or variations if your initial guesses aren't
+                successful.
+            </div>
+        </div>
+    </div>
+    <script src="lobby.js"></script>
+</body>
+
+</html>
